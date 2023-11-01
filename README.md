@@ -1,45 +1,15 @@
 ![header](imgs/header.jpg)
 
-# AlphaFold
+# AlphaFold-SSH-Westlake-University-Aisa-Source
 
-This package provides an implementation of the inference pipeline of AlphaFold
-v2. For simplicity, we refer to this model as AlphaFold throughout the rest of
-this document.
-
-We also provide:
-
-1.  An implementation of AlphaFold-Multimer. This represents a work in progress
-    and AlphaFold-Multimer isn't expected to be as stable as our monomer
-    AlphaFold system. [Read the guide](#updating-existing-installation) for how
-    to upgrade and update code.
-2.  The [technical note](docs/technical_note_v2.3.0.md) containing the models
-    and inference procedure for an updated AlphaFold v2.3.0.
-3.  A [CASP15 baseline](docs/casp15_predictions.zip) set of predictions along
-    with documentation of any manual interventions performed.
-
-Any publication that discloses findings arising from using this source code or
-the model parameters should [cite](#citing-this-work) the
-[AlphaFold paper](https://doi.org/10.1038/s41586-021-03819-2) and, if
-applicable, the
-[AlphaFold-Multimer paper](https://www.biorxiv.org/content/10.1101/2021.10.04.463034v1).
-
-Please also refer to the
-[Supplementary Information](https://static-content.springer.com/esm/art%3A10.1038%2Fs41586-021-03819-2/MediaObjects/41586_2021_3819_MOESM1_ESM.pdf)
-for a detailed description of the method.
-
-**You can use a slightly simplified version of AlphaFold with
-[this Colab notebook](https://colab.research.google.com/github/deepmind/alphafold/blob/main/notebooks/AlphaFold.ipynb)**
-or community-supported versions (see below).
-
-If you have any questions, please contact the AlphaFold team at
-[alphafold@deepmind.com](mailto:alphafold@deepmind.com).
-
-![CASP14 predictions](imgs/casp14_predictions.gif)
+This package provides an edited Dockerfile and run_alphafold.py, if you can only
+stay in docker environment on some AI GPU cluster, this provides a perfect 
+resolution to you!
 
 ## Installation and running your first prediction
 
-You will need a machine running Linux, AlphaFold does not support other
-operating systems. Full installation requires up to 3 TB of disk space to keep
+If you want to build the docker image from Dockerfile, you will need a machine
+running Linux, or you may run into errors. Full installation requires up to 3 TB of disk space to keep
 genetic databases (SSD storage is recommended) and a modern NVIDIA GPU (GPUs
 with more memory can predict larger protein structures).
 
